@@ -6,7 +6,7 @@
     RUN apt-get update && apt-get install -y git
     
     # Clone your frontend repo
-    RUN git clone https://github.com/saiamrutha1/S203-DOCKER-VOLUME-FRONTEND.gitt .
+    RUN git clone https://github.com/2300031445/S203-DOCKER-VOLUME-FRONTEND.git .
     
     RUN npm install
     RUN npm run build

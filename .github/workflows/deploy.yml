@@ -25,7 +25,7 @@ jobs:
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ubuntu   # or ubuntu if Ubuntu server
-          key: ${{ secrets.EC2_SSH_KEY }}
+          key: ${{ secrets.EC2_SSH }}
           source: "./*"
           target: /home/ubuntu/ecommercefullstack
  
@@ -36,7 +36,7 @@ jobs:
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ubuntu    # ✅ Amazon Linux user
-          key: ${{ secrets.EC2_SSH_KEY }}
+          key: ${{ secrets.EC2_SSH }}
           script_stop: true
           debug: true
           script: |
